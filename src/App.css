@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +30,30 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+body, p, span, h1, h2, h3, h4, h5, input, button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+/* These are general styles for the typography */
+.extra-small {
+  font-size: 9px;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.grey {
+  color: #7E7E7E;
+}
+
+.bold {
+  font-weight: 600;
 }
