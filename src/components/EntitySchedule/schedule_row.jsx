@@ -1,22 +1,23 @@
 import React from 'react';
 import {ScheduleRowContainer, ScheduleRowGrid, FlexColumn} from '../ui/containers';
 import StatusButton from '../StatusButton';
+import {CalendarIcon} from '../ui/icons';
 
-const ScheduleRow = () => (
+const ScheduleRow = ({time, subtime, name, subname, guests}) => (
   <div>
     <ScheduleRowContainer>
       <ScheduleRowGrid>
-        <span className="icon grid-column-1">ICON</span>
+        <CalendarIcon color="#323C47" />
         <FlexColumn>
-          <span className="grid-column-2">4:30pm</span>
-          <span className="grid-column-2 small grey">(5:00pm to 9:00pm)</span>
+          <span className="grid-column-2 bold">{time}</span>
+          <span className="grid-column-2 small grey">{subtime}</span>
         </FlexColumn>
         <FlexColumn>
-          <span className="grid-column-3">The Main Event</span>
-          <span className="grid-column-3 small grey">123 Mootown Lane, Portland, 97214</span>
+          <span className="grid-column-3 bold">{name}</span>
+          <span className="grid-column-3 small grey">{subname}</span>
         </FlexColumn>
         <FlexColumn>
-          <span className="grid-column-4">Theo Deane + 1</span>
+          <span className="grid-column-4">{guests}</span>
         </FlexColumn>
         <span className="grid-column-5"><StatusButton>New</StatusButton></span>
       </ScheduleRowGrid>

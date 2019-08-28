@@ -9,7 +9,7 @@ const Notes = () => (
   <Container className="padding-20">
     <h4>Notes</h4>
     <FlexContainer className="flex-start">
-      <SearchInput placeholder="Search Notes..." /><AddButton />
+      <SearchInput placeholder="Search Notes..." /><AddButton>+</AddButton>
     </FlexContainer>
     {NOTES.map(({content, details, link}) => (
       <NoteRow

@@ -8,6 +8,10 @@ export const SearchInput = styled.input`
   margin: 10px 0px;
   padding: 0px 20px;
   display: inline;
+
+  &::placeholder {
+    color: #90A0B7;
+  }
 `
 
 

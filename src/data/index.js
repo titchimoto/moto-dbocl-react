@@ -16,7 +16,7 @@ export const SCHEDULES = [
     time: '6:00pm',
     subtime: null,
     name: '#456',
-    subname: 'LAX (1 World Way, Los Angeles, CA, 90045) -> DEN (12 Denver Road, Denver, CO, 12345)',
+    subname: 'LAX (1 World Way, L.A, CA, 90045) -> DEN (12 Denver Road, Denver, CO, 12345)',
     guests: 'Theo Deane + 2',
   },
   {
@@ -36,17 +36,17 @@ export const NOTES = [
   },
   {
     content: 'Theo is a cat, and not always a super friendly one. So he will need plenty of treats, lap time and naps.',
-    details: '07/08/19 by Richard Deane',
-    link: 'Technical Rehearsal',
+    details: '07/05/19 by Richard Deane',
+    link: 'Dinner',
   },
   {
     content: 'Theo is a cat, and not always a super friendly one. So he will need plenty of treats, lap time and naps.',
-    details: '07/08/19 by Richard Deane',
-    link: 'Technical Rehearsal',
+    details: '07/02/19 by Richard Deane',
+    link: 'The Main Event',
   },
   {
     content: 'Theo is a cat, and not always a super friendly one. So he will need plenty of treats, lap time and naps.',
-    details: '07/08/19 by Richard Deane',
+    details: '07/01/19 by Richard Deane',
     link: 'Technical Rehearsal',
   },
 ]

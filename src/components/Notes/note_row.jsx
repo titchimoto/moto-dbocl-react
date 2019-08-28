@@ -1,6 +1,7 @@
 import React from 'react';
 import {NoteContainer, FlexContainer} from '../ui/containers';
 import {TextLink} from '../ui/buttons';
+import {Icon, TrashIcon, PencilIcon} from '../ui/icons';
 
 const NoteRow = ({content, details, link}) => (
   <NoteContainer>
@@ -12,8 +13,8 @@ const NoteRow = ({content, details, link}) => (
         <TextLink>{link}</TextLink>
       </div>
       <FlexContainer className="space-between">
-        <button>ICON</button>
-        <button>ICON</button>
+        <PencilIcon />
+        <TrashIcon />
       </FlexContainer>
     </FlexContainer>
   </NoteContainer>

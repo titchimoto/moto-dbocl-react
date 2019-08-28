@@ -20,16 +20,22 @@ export const AddButton = styled.button`
   height: 30px;
   border-radius: 50%;
   color: white;
+  font-size: 1.25em;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
 `
 
 export const TextLink = styled.a`
   color: ${({color}) => color ? color : '#109CF1'};
-  font-size: 10px;
+  font-size: 11px;
   text-decoration: none;
 
   &:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 `
 
@@ -38,4 +44,10 @@ export const NavLink = styled.button`
   border: 0;
   font-weight: 600;
   margin: 10px 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 `

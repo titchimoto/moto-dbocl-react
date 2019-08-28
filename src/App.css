@@ -38,16 +38,21 @@ body, p, span, h1, h2, h3, h4, h5, input, button {
   border: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+span, p {
   font-size: 12px;
 }
 
 /* These are general styles for the typography */
 .extra-small {
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .small {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .grey {
@@ -56,4 +61,8 @@ body, p, span, h1, h2, h3, h4, h5, input, button {
 
 .bold {
   font-weight: 600;
+}
+
+.inline {
+  display: inline;
 }

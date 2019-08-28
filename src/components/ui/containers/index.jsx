@@ -67,7 +67,7 @@ export const DateRowContainer = styled.div`
   border-radius: 5px;
   padding: 0px 10px;
   color: white;
-  margin: 5px 0px;
+  margin: 15px 0px 5px 0px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -82,9 +82,9 @@ export const ScheduleRowContainer = styled.div`
 
 export const ScheduleRowGrid = styled.div`
   display: grid;
-  grid-template-columns: 7% 15% 48% 15% 15%;
+  grid-template-columns: 5% 15% 50% 15% 15%;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0px 10px 0px 20px;
   grid-gap: 10px;
   height: 100%;
 
