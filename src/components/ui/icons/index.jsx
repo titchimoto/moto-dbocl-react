@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+export const ProfileImage = styled.img`
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+`
+
 export const Icon = styled.i`
   margin: 0px 10px 0px 5px;
 
@@ -9,7 +15,6 @@ export const Icon = styled.i`
     opacity: 0.75;
   }
 `
-
 export const TrashIcon = ({color = '#F7685B', width = '14px', height = '17px'}) => {
   return (
     <Icon>
@@ -153,6 +158,21 @@ export const ReportIcon = ({color = '#323C47', width = '24px', height = '20px'})
           fill={color}
           fillRule="evenodd"
           d="M2 0h18a2 2 0 012 2v14a2 2 0 01-2 2H2a2 2 0 01-2-2V2a2 2 0 012-2zm0 2v14h18V2H2zm4 12h2V8H6v6zm6 0h-2V4h2v10zm2 0h2V7h-2v7z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </Icon>
+  );
+}
+
+export const HouseIcon = ({color = '#323C47', width = '12px', height = '12px'}) => {
+  return (
+    <Icon>
+      <svg xmlns="http://www.w3.org/2000/svg" height={height} width={width} fill={color} viewBox="0 0 12 12">
+        <path
+          fill={color}
+          fillRule="evenodd"
+          d="M2.694 4.407L6 1.1l3.306 3.306v5.509H2.694v-5.51zM1.592 5.509l-.813.814L0 5.543 5.221.324c.43-.43 1.128-.43 1.558 0L12 5.542l-.779.78-.813-.814v4.407c0 .608-.494 1.102-1.102 1.102H2.694a1.102 1.102 0 01-1.102-1.102V5.509z"
           clipRule="evenodd"
         />
       </svg>

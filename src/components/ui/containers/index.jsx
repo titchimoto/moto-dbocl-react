@@ -25,7 +25,6 @@ export const ContentSection = styled.section`
 export const Container = styled.div`
   padding: ${({padding}) => padding || ''};
 
-
   &.padding-10 {
     padding: 10px;
   }
@@ -37,21 +36,39 @@ export const Container = styled.div`
 // General Multipurpose Flex Containers
 export const FlexContainer = styled.div`
   display: flex;
+  align-items: center;
+  padding: ${({padding}) => padding || ''};
 
   &.flex-start {
     justify-content: flex-start;
-    align-items: center;
   }
 
   &.space-between {
     justify-content: space-between;
-    align-items: center;
+  }
+
+  &.space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.columns {
+    flex-flow: column;
+    align-items: flex-start;
   }
 `
 
 export const FlexColumn = styled.div`
   display: flex;
   flex-flow: column;
+`
+
+export const Row = styled.div`
+  border-top: 1px solid #D6D6D6;
+  border-bottom: 1px solid #D6D6D6;
 `
 
 export const Divider = styled.div`

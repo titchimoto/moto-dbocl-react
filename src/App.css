@@ -1,38 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
 body, p, span, h1, h2, h3, h4, h5, input, button {
   margin: 0;
   border: 0;
@@ -44,6 +9,8 @@ body, p, span, h1, h2, h3, h4, h5, input, button {
 
 span, p {
   font-size: 12px;
+  border: 0;
+  margin: 0;
 }
 
 /* These are general styles for the typography */
@@ -66,3 +33,10 @@ span, p {
 .inline {
   display: inline;
 }
+
+.padding-div {
+  padding: 20px 0px;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');

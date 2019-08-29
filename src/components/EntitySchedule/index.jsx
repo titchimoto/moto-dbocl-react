@@ -11,37 +11,37 @@ class EntitySchedule extends Component {
       <Container className="padding-20">
         <ScheduleFilter />
         <DateRow date="Thursday 6 July 2019" />
-        {SCHEDULES.map(({time, subtime, name, subname, guests}) => (
+        {SCHEDULES.map(({time, subtime, name, details, guests}) => (
           <ScheduleRow
             key={name}
             time={time}
             subtime={subtime}
             name={name}
-            subname={subname}
+            details={details}
             guests={guests}
           />
         ))}
 
         <DateRow date="Friday 7 July 2019" />
-        {SCHEDULES.map(({time, subtime, name, subname, guests}) => (
+        {SCHEDULES.map(({time, subtime, name, details, guests}) => (
           <ScheduleRow
             key={name}
             time={time}
             subtime={subtime}
             name={name}
-            subname={subname}
+            details={details}
             guests={guests}
           />
         ))}
 
         <DateRow date="Saturday 8 July 2019" />
-        {SCHEDULES.map(({time, subtime, name, subname, guests}) => (
+        {SCHEDULES.map(({time, subtime, name, details, guests}) => (
           <ScheduleRow
             key={name}
             time={time}
             subtime={subtime}
             name={name}
-            subname={subname}
+            details={details}
             guests={guests}
           />
         ))}

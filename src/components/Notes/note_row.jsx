@@ -1,7 +1,7 @@
 import React from 'react';
 import {NoteContainer, FlexContainer} from '../ui/containers';
 import {TextLink} from '../ui/buttons';
-import {Icon, TrashIcon, PencilIcon} from '../ui/icons';
+import {TrashIcon, PencilIcon} from '../ui/icons';
 
 const NoteRow = ({content, details, link}) => (
   <NoteContainer>

@@ -9,21 +9,21 @@ export const SCHEDULES = [
     time: '2:00pm',
     subtime: '(to 5:00pm)',
     name: 'Technical Rehearsal',
-    subname: '2828 SW Corbett Avenue, Portland, 97221',
+    details: '2828 SW Corbett Avenue, Portland, 97221',
     guests: 'Theo Deane + 1',
   },
   {
     time: '6:00pm',
     subtime: null,
     name: '#456',
-    subname: 'LAX (1 World Way, L.A, CA, 90045) -> DEN (12 Denver Road, Denver, CO, 12345)',
+    details: 'LAX (1 World Way, L.A, CA, 90045) -> DEN (12 Denver Road, Denver, CO, 12345)',
     guests: 'Theo Deane + 2',
   },
   {
     time: '10:00pm',
     subtime: '(to 11:00pm)',
     name: 'The Nines',
-    subname: '525 SW Morrison Street, Portland, 97212',
+    details: '525 SW Morrison Street, Portland, 97212',
     guests: 'Theo Deane + 2',
   }
 ]

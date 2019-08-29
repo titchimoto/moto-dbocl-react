@@ -3,7 +3,7 @@ import {ScheduleRowContainer, ScheduleRowGrid, FlexColumn} from '../ui/container
 import StatusButton from '../StatusButton';
 import {CalendarIcon} from '../ui/icons';
 
-const ScheduleRow = ({time, subtime, name, subname, guests}) => (
+const ScheduleRow = ({time, subtime, name, details, guests}) => (
   <div>
     <ScheduleRowContainer>
       <ScheduleRowGrid>
@@ -14,7 +14,7 @@ const ScheduleRow = ({time, subtime, name, subname, guests}) => (
         </FlexColumn>
         <FlexColumn>
           <span className="grid-column-3 bold">{name}</span>
-          <span className="grid-column-3 small grey">{subname}</span>
+          <span className="grid-column-3 small grey">{details}</span>
         </FlexColumn>
         <FlexColumn>
           <span className="grid-column-4">{guests}</span>

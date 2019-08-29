@@ -16,7 +16,6 @@ class EntityDashboard extends Component {
           <EntityContact />
           <Divider />
           <RelatedPeople />
-          <Divider />
           <Notes />
         </ContentSection>
         <ContentSection className="right-content">
