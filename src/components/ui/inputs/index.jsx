@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const SearchInput = styled.input`
   background: #F5F8FA;
   height: 40px;
-  min-width: 280px;
+  min-width: 260px;
   border-radius: 5px;
   margin: 10px 0px;
   padding: 0px 20px;
@@ -17,10 +17,11 @@ export const SearchInput = styled.input`
 
 export const Date = styled.input`
   border: 1px solid #D5DDE7;
-  height: 30px;
+  height: 35px;
   border-radius: 5px;
-  width: 88px;
-  margin: 0px 5px;
+  width: 100px;
+  padding: 0px 5px;
+  margin-right: 5px;
 `
 
 export const Input = styled.input`
@@ -28,7 +29,9 @@ export const Input = styled.input`
   border: 1px solid #E5E5E5;
   border-radius: 5px;
   /* min-width: 400px; */
-  width: ${({width}) => width || '100%'};
+  width: ${({width}) => width || '90%'};
+  padding: 0px 5px;
+  margin-right: 5px;
 `
 
 export const Select = styled.select`
@@ -67,10 +70,10 @@ export const DateInput = ({label, ...props}) => (
   </FieldContainer>
 )
 
-export const SelectInput = ({label, children}) => (
+export const SelectInput = ({label, children, ...props}) => (
   <FieldContainer>
     <FieldLabel>{label}</FieldLabel>
-    <Select>
+    <Select {...props}>
       {children}
     </Select>
   </FieldContainer>

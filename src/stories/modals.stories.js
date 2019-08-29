@@ -6,10 +6,11 @@ import { storiesOf } from '@storybook/react';
 import ContactCard from '../components/Modals/contact_card';
 import CreateConnections from '../components/Modals/create_connection';
 import EditContact from '../components/Modals/edit_contact';
-import NewEventItinerary from '../components/Modals/new_event_itinerary';
+import EventItinerary from '../components/Modals/event_itinerary';
+
 
 storiesOf('Modals & Forms', module)
   .add('Contact Card', () => <ContactCard />)
   .add('Create Connections', () => <CreateConnections />)
   .add('Edit Contact', () => <EditContact />)
-  .add('New Event Itinerary', () => <NewEventItinerary />)
+  .add('Event Itinerary', () => <EventItinerary />)

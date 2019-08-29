@@ -5,6 +5,11 @@ export const ProfileImage = styled.img`
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  margin: ${({spaced}) => spaced ? '0px 4px' : ''};
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 export const Icon = styled.i`
@@ -173,6 +178,21 @@ export const HouseIcon = ({color = '#323C47', width = '12px', height = '12px'}) 
           fill={color}
           fillRule="evenodd"
           d="M2.694 4.407L6 1.1l3.306 3.306v5.509H2.694v-5.51zM1.592 5.509l-.813.814L0 5.543 5.221.324c.43-.43 1.128-.43 1.558 0L12 5.542l-.779.78-.813-.814v4.407c0 .608-.494 1.102-1.102 1.102H2.694a1.102 1.102 0 01-1.102-1.102V5.509z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </Icon>
+  );
+}
+
+export const ChevronIcon = ({color = '#323C47', width = '15px', height = '9px'}) => {
+  return (
+    <Icon>
+      <svg xmlns="http://www.w3.org/2000/svg" height={height} width={width} fill={color} viewBox="0 0 15 9">
+        <path
+          fill={color}
+          fillRule="evenodd"
+          d="M13.782 0L15 1.218l-7.5 7.5-7.5-7.5L1.218 0 7.5 6.282 13.782 0z"
           clipRule="evenodd"
         />
       </svg>

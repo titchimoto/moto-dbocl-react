@@ -7,6 +7,17 @@ export const MainContent = styled.div`
   min-height: 100vh;
 `
 
+export const PopOutContainer = styled.div`
+  position: fixed;
+  background: white;
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  z-index: 10;
+  max-width: 300px;
+  padding: 20px;
+  margin: 10px 0px;
+`
+
 export const ContentSection = styled.section`
   background: white;
   margin: 12px;

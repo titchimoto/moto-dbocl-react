@@ -65,3 +65,22 @@ export const RELATED_PEOPLE = [
     phone: '(555) 555-5555',
   },
 ]
+
+
+export const CONTACTS = [
+  {
+    imageUrl: 'https://i.imgur.com/KNFkYkz.jpg',
+    name: 'Theo Deane',
+    title: 'Stylist',
+  },
+  {
+    imageUrl: 'https://i.imgur.com/KNFkYkz.jpg',
+    name: 'Richard Deane',
+    title: 'Manager',
+  },
+  {
+    imageUrl: 'https://i.imgur.com/KNFkYkz.jpg',
+    name: 'Mellie Deane',
+    title: 'Stylist',
+  },
+]

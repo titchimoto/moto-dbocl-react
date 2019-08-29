@@ -55,6 +55,7 @@ export const NavLink = styled.button`
 
 export const PrimaryButton = styled.button`
   min-height: 30px;
+  max-height: 30px;
   min-width: 100px
   color: ${({invert}) => invert ?  '#2ED47A' : 'white'};
   background: ${({invert}) => invert ? 'white': '#2ED47A'};
@@ -63,6 +64,7 @@ export const PrimaryButton = styled.button`
   font-weight: 600;
   margin: 0px 5px;
   padding: 0px 10px;
+  text-transform: uppercase;
 
   &:hover {
     cursor: pointer;

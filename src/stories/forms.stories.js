@@ -8,6 +8,9 @@ import CallOffset from '../components/Forms/call_offset';
 import DateTime from '../components/Forms/date_time';
 import NewConnectionRow from '../components/Forms/new_connection_row';
 import PreviousConnectionRow from '../components/Forms/previous_connection_row';
+import NewEventItinerary from '../components/Forms/new_event_itinerary';
+import ExistingEventItinerary from '../components/Forms/existing_event_itinerary';
+import AddGuests from '../components/AddGuests';
 
 storiesOf('Forms', module)
   .add('Add Email Row', () => <EmailRow />)
@@ -16,3 +19,6 @@ storiesOf('Forms', module)
   .add('Add Previous Connection Row', () => <PreviousConnectionRow />)
   .add('Call Offset', () => <CallOffset />)
   .add('Date & Time', () => <DateTime />)
+  .add('New Event Itinerary', () => <NewEventItinerary />)
+  .add('Existing Event Itinerary', () => <ExistingEventItinerary />)
+  .add('Add Guests', () => <AddGuests />)
