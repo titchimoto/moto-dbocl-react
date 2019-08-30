@@ -4,6 +4,7 @@ import ScheduleFilter from './schedule_filter';
 import ScheduleRow from './schedule_row';
 import DateRow from './date_row';
 import {Container} from '../ui/containers';
+// import {StickyContainer, Sticky} from 'react-sticky';
 
 class EntitySchedule extends Component {
   render() {
@@ -21,7 +22,6 @@ class EntitySchedule extends Component {
             guests={guests}
           />
         ))}
-
         <DateRow date="Friday 7 July 2019" />
         {SCHEDULES.map(({time, subtime, name, details, guests}) => (
           <ScheduleRow

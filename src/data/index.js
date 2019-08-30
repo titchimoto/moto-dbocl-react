@@ -142,3 +142,12 @@ export const FLIGHT_PASSENGERS = [
     additional: ''
   },
 ]
+
+export const FLIGHT_RESULTS = [
+  {
+    time: '2:25pm',
+    flightNumber: 'BA10',
+    airline: 'British Airways',
+    route: 'London Heathrow -> Portland International'
+  }
+]

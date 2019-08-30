@@ -5,9 +5,12 @@ import {ModalHeader, ModalContent, ModalFooter} from '../ui/modals';
 import {CancelButton, SaveButton} from '../ui/buttons';
 import FlightSearch from '../Forms/flight_search';
 import FlightPassengerRow from '../Forms/flight_passenger_row';
+import FlightSearchResults from '../Forms/flight_search_results';
+import FlightManualFields from '../Forms/flight_manual_fields';
 import {FieldLabel} from '../ui/inputs';
 import {FLIGHT_PASSENGERS} from '../../data';
 import {Flex, Box} from 'rebass/styled-components';
+import {Divider} from '../ui/containers';
 
 class FlightItinerary extends Component {
   constructor(props) {
@@ -23,7 +26,15 @@ class FlightItinerary extends Component {
         {/* Add Guests */}
         <AddGuests />
         <ModalContent>
+          {/* Flight Search API */}
           <FlightSearch />
+          {/* Flight Search Results */}
+          <FlightSearchResults />
+          <Divider />
+
+          {/* Flight Manual Entry Fields */}
+          <FlightManualFields />
+          <Divider />
 
           {/* Passenger Rows */}
           <Box my={4}>

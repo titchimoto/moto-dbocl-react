@@ -62,7 +62,6 @@ class HotelItinerary extends Component {
               roomOptions={roomOptions}
               confirmation={confirmation}
             />
-
           ))}
         </ModalContent>
         {/* Modal Footer */}

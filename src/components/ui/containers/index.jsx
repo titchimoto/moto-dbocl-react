@@ -25,13 +25,6 @@ export const ContentSection = styled.section`
   border-radius: 5px;
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
   overflow: auto;
-
-  &.left-content {
-    width: 30%;
-  }
-  &.right-content {
-    width: 70%;
-  }
 `
 
 export const Container = styled.div`
@@ -100,6 +93,7 @@ export const DateRowContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  ${({props}) => props && props};
 `
 
 export const ScheduleRowContainer = styled.div`

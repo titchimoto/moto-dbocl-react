@@ -35,48 +35,24 @@ class ContactCard extends Component {
             </div>
           </Flex>
           <Flex justifyContent="space-evenly">
-            <div>
+            <Flex flexDirection="column">
               <h5>Recent Events</h5>
-              <div>
                 <TextLink>Theo's Big Birthday Bash</TextLink>
-              </div>
-              <div>
                 <TextLink>The Grammy's</TextLink>
-              </div>
-              <div>
                 <TextLink>The Rugby World Cup 2019</TextLink>
-              </div>
-              <div>
                 <TextLink>Mellie's Birthday</TextLink>
-              </div>
-              <div>
                 <TextLink>The NBA Finals</TextLink>
-              </div>
-              <div>
                 <TextLink>see more</TextLink>
-              </div>
-            </div>
-            <div>
+            </Flex>
+            <Flex flexDirection="column">
               <h5>Recent Events</h5>
-              <div>
                 <TextLink>Mickey Mouse</TextLink>
-              </div>
-              <div>
                 <TextLink>Mellie Deane</TextLink>
-              </div>
-              <div>
                 <TextLink>Buzz Lightyear</TextLink>
-              </div>
-              <div>
                 <TextLink>Winnie The Pooh</TextLink>
-              </div>
-              <div>
                 <TextLink>Owen Farrell</TextLink>
-              </div>
-              <div>
                 <TextLink>see more</TextLink>
-              </div>
-            </div>
+            </Flex>
           </Flex>
         </ModalContent>
         <ModalFooter>

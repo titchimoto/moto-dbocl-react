@@ -94,8 +94,10 @@ export const SecondaryButton = styled.button`
   color: ${({color}) => color || '#109CF1'};
   background: white;
   border-radius: 5px;
-  border: ${({border}) => border || '1px solid #109CF1'};
+  border: ${({color}) => `1px solid ${color}` || '1px solid #109CF1'};
   margin: 0px 5px;
+  text-transform: uppercase;
+  padding: 0px 10px;
 
   &:hover {
     cursor: pointer;

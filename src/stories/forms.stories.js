@@ -13,6 +13,7 @@ import ExistingEventItinerary from '../components/Forms/existing_event_itinerary
 import AddGuests from '../components/AddGuests';
 import VehicleItineraryFields from '../components/Forms/vehicle_itinerary_fields';
 import VehiclePickupFields from '../components/Forms/vehicle_pickup_fields';
+import FlightManualFields from '../components/Forms/flight_manual_fields';
 
 storiesOf('Forms', module)
   .add('Add Email Row', () => <EmailRow />)
@@ -26,3 +27,4 @@ storiesOf('Forms', module)
   .add('Add Guests', () => <AddGuests />)
   .add('Vehicle Itinerary Fields', () => <VehicleItineraryFields />)
   .add('Vehicle Pickup Fields', () => <VehiclePickupFields />)
+  .add('Flight Manual Fields', () => <FlightManualFields />)
