@@ -25,6 +25,7 @@ class AddGuests extends Component {
     const {showForm, showAllGuests} = this.state;
     return(
       <Box px={4} pt={4}>
+        {showForm && <AddGuestsForm />}
         <Flex alignItems="center">
           <PrimaryButton invert onClick={this.handleShowForm}>+ Add Guests</PrimaryButton>
           {CONTACTS.map(({imageUrl, name, title}) => (
@@ -44,7 +45,6 @@ class AddGuests extends Component {
           </div>
           {showAllGuests && <div style={{right: '80px', position: 'relative'}}><AllGuests /></div>}
         </Flex>
-        {showForm && <AddGuestsForm />}
       </Box>
     )
   }

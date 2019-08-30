@@ -20,8 +20,6 @@ export const ModalContainer = styled.div`
 
 export const ModalClose = styled.div`
   position: absolute;
-  display: flex;
-  justify-content: flex-end;
   height: 30px;
   width: 30px;
   background: #F7685B;

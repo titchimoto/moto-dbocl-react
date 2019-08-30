@@ -84,3 +84,61 @@ export const CONTACTS = [
     title: 'Stylist',
   },
 ]
+
+
+export const HOTEL_GUESTS = [
+  {
+    name: 'Theo Deane',
+    checkin: '07/07/2019',
+    checkout: '08/07/2019',
+    roomType: 'suite',
+    roomOptions: 'non-smoking',
+    confirmation: 'abc123',
+  },
+  {
+    name: 'Richard Deane',
+    checkin: '07/07/2019',
+    checkout: '08/07/2019',
+    roomType: 'suite',
+    roomOptions: 'non-smoking',
+    confirmation: 'abc123',
+  },
+  {
+    name: 'Mellie Deane',
+    checkin: '07/07/2019',
+    checkout: '08/07/2019',
+    roomType: 'suite',
+    roomOptions: 'non-smoking',
+    confirmation: 'abc123',
+  },
+]
+
+export const FLIGHT_PASSENGERS = [
+  {
+    name: 'Theo Deane',
+    dob: '08/09/2013',
+    travelerNumber: '1234567890',
+    seatNumber: '1A',
+    class: 'First',
+    confirmation: 'abc123',
+    additional: 'Nervous flyer.'
+  },
+  {
+    name: 'Richard Deane',
+    dob: '10/15/1986',
+    travelerNumber: '1234567890',
+    seatNumber: '1B',
+    class: 'First',
+    confirmation: 'abc123',
+    additional: 'Will need toys.'
+  },
+  {
+    name: 'Mellie Deane',
+    dob: '06/01/2018',
+    travelerNumber: '1234567890',
+    seatNumber: '1C',
+    class: 'First',
+    confirmation: 'abc123',
+    additional: ''
+  },
+]

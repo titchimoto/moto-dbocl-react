@@ -3,14 +3,15 @@ import {NOTES} from '../../data';
 import NoteRow from './note_row';
 import {SearchInput} from '../ui/inputs';
 import {AddButton} from '../ui/buttons';
-import {Container, FlexContainer} from '../ui/containers';
+import {Container} from '../ui/containers';
+import {Flex} from 'rebass/styled-components';
 
 const Notes = () => (
   <Container className="padding-20">
     <h4>Notes</h4>
-    <FlexContainer className="flex-start">
+    <Flex justifyContent="flex-start">
       <SearchInput placeholder="Search Notes..." /><AddButton>+</AddButton>
-    </FlexContainer>
+    </Flex>
     {NOTES.map(({content, details, link}) => (
       <NoteRow
         content={content}

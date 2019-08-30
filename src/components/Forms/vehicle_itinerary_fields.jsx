@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {Flex, Box} from 'rebass/styled-components';
-import DateTime from '../Forms/date_time';
-import CallOffset from '../Forms/call_offset';
 import {TextInput} from '../ui/inputs';
 
-
-class NewEventItinerary extends Component {
+class VehicleItineraryFields extends Component {
   render() {
     return (
       <Flex width="100%" justifyContent='space-around'>
@@ -13,16 +10,10 @@ class NewEventItinerary extends Component {
         <Box width={1/1} px ={3}>
             <Flex flexDirection="column">
               <Box width={1/1}>
-                <TextInput label="Name" required />
+                <TextInput label="Vehicle Organization" required />
               </Box>
               <Box width={1/1}>
-                <TextInput label="Location Address" />
-              </Box>
-              <Box width={1/1}>
-                <TextInput label="Location Note" />
-              </Box>
-              <Box width={1/1}>
-                <TextInput label="Additional Information" />
+                <TextInput label="Vehicle Type" />
               </Box>
             </Flex>
           </Box>
@@ -31,10 +22,10 @@ class NewEventItinerary extends Component {
           <Box width={1/1} px={3}>
             <Flex flexDirection="column">
               <Box width={1/1}>
-                <DateTime />
+                <TextInput label="Name on Sign" required />
               </Box>
               <Box width={1/1}>
-                <CallOffset />
+                <TextInput label="Additional Information" />
               </Box>
             </Flex>
           </Box>
@@ -44,4 +35,4 @@ class NewEventItinerary extends Component {
   }
 }
 
-export default NewEventItinerary
+export default VehicleItineraryFields;

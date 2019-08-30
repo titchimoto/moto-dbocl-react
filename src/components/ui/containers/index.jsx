@@ -8,14 +8,15 @@ export const MainContent = styled.div`
 `
 
 export const PopOutContainer = styled.div`
-  position: fixed;
+  position: absolute;
   background: white;
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   z-index: 10;
   max-width: 300px;
+  min-width: 100px;
   padding: 20px;
-  margin: 10px 0px;
+  margin: 35px 0px;
 `
 
 export const ContentSection = styled.section`
@@ -45,37 +46,37 @@ export const Container = styled.div`
 `
 
 // General Multipurpose Flex Containers
-export const FlexContainer = styled.div`
-  display: flex;
-  align-items: center;
-  padding: ${({padding}) => padding || ''};
+// export const FlexContainer = styled.div`
+//   display: flex;
+//   align-items: center;
+//   padding: ${({padding}) => padding || ''};
+//
+//   &.flex-start {
+//     justify-content: flex-start;
+//   }
+//
+//   &.space-between {
+//     justify-content: space-between;
+//   }
+//
+//   &.space-evenly {
+//     justify-content: space-evenly;
+//   }
+//
+//   &.center {
+//     justify-content: center;
+//   }
+//
+//   &.columns {
+//     flex-flow: column;
+//     align-items: flex-start;
+//   }
+// `
 
-  &.flex-start {
-    justify-content: flex-start;
-  }
-
-  &.space-between {
-    justify-content: space-between;
-  }
-
-  &.space-evenly {
-    justify-content: space-evenly;
-  }
-
-  &.center {
-    justify-content: center;
-  }
-
-  &.columns {
-    flex-flow: column;
-    align-items: flex-start;
-  }
-`
-
-export const FlexColumn = styled.div`
-  display: flex;
-  flex-flow: column;
-`
+// export const FlexColumn = styled.div`
+//   display: flex;
+//   flex-flow: column;
+// `
 
 export const Row = styled.div`
   border-top: 1px solid #D6D6D6;
@@ -139,8 +140,4 @@ export const NoteContainer = styled.div`
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   margin: 20px 0px;
   padding: 10px;
-`
-
-export const RelatedPeopleContainer = styled.div`
-  padding: 20px;
 `

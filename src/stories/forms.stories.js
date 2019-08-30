@@ -11,6 +11,8 @@ import PreviousConnectionRow from '../components/Forms/previous_connection_row';
 import NewEventItinerary from '../components/Forms/new_event_itinerary';
 import ExistingEventItinerary from '../components/Forms/existing_event_itinerary';
 import AddGuests from '../components/AddGuests';
+import VehicleItineraryFields from '../components/Forms/vehicle_itinerary_fields';
+import VehiclePickupFields from '../components/Forms/vehicle_pickup_fields';
 
 storiesOf('Forms', module)
   .add('Add Email Row', () => <EmailRow />)
@@ -22,3 +24,5 @@ storiesOf('Forms', module)
   .add('New Event Itinerary', () => <NewEventItinerary />)
   .add('Existing Event Itinerary', () => <ExistingEventItinerary />)
   .add('Add Guests', () => <AddGuests />)
+  .add('Vehicle Itinerary Fields', () => <VehicleItineraryFields />)
+  .add('Vehicle Pickup Fields', () => <VehiclePickupFields />)

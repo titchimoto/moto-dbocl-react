@@ -1,39 +1,39 @@
 import React, { Component } from 'react';
 import {SearchInput, DateInput} from '../ui/inputs';
 import {AddButton, NavLink} from '../ui/buttons';
-import {FlexContainer, FlexColumn} from '../ui/containers';
 import {FilterIcon, ReportIcon} from '../ui/icons';
+import {Flex} from 'rebass/styled-components';
 
 class ScheduleFilter extends Component {
   render() {
     return (
       <div>
-        <FlexContainer className="flex-start">
+        <Flex justifyContent="flex-start">
           <NavLink>ITINERARIES</NavLink>
           <NavLink>DEAL</NavLink>
-        </FlexContainer>
-        <FlexContainer className="space-between">
+        </Flex>
+        <Flex alignItems="center" justifyContent="space-between">
           <div>
             <SearchInput placeholder="Search Theo's Schedule" /><AddButton>+</AddButton>
           </div>
           <div>
-            <FlexContainer className="space-between">
-              <FlexColumn>
+            <Flex alignItems="center" justifyContent="space-between">
+              <Flex flexDirection="column">
                 <label className="small" for="start-date">Filter Start Date</label>
                 <DateInput />
-              </FlexColumn>
+              </Flex>
               <span>to</span>
-              <FlexColumn>
+              <Flex flexDirection="column">
                 <label className="small" for="start-date">Filter End Date</label>
                 <DateInput />
-              </FlexColumn>
+              </Flex>
               <div>
                 <FilterIcon />
                 <ReportIcon />
               </div>
-            </FlexContainer>
+            </Flex>
           </div>
-        </FlexContainer>
+        </Flex>
       </div>
     )
   }

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {Flex, Box} from 'rebass/styled-components';
 import Modal from '../Modals';
-import DateTime from '../Forms/date_time';
-import CallOffset from '../Forms/call_offset';
 import AddGuests from '../AddGuests';
 import {
   ModalContent,
@@ -10,7 +8,7 @@ import {
   ModalFooter
 } from '../ui/modals';
 import {CancelButton, SaveButton} from '../ui/buttons';
-import {TextInput, SelectInput} from '../ui/inputs';
+import {SelectInput} from '../ui/inputs';
 import ExistingEventItinerary from '../Forms/existing_event_itinerary';
 import NewEventItinerary from '../Forms/new_event_itinerary';
 
@@ -50,12 +48,10 @@ class EventItinerary extends Component {
               </Flex>
           )}
 
-          <div className="padding-div">
-            {/* New Event Itinerary Form */}
-            {showNewEvent && <NewEventItinerary />}
-            {/* Existing Event Itinerary Form */}
-            {showExistingEvent && <ExistingEventItinerary />}
-          </div>
+          {/* New Event Itinerary Form */}
+          {showNewEvent && <NewEventItinerary />}
+          {/* Existing Event Itinerary Form */}
+          {showExistingEvent && <ExistingEventItinerary />}
         </ModalContent>
         {/* Modal Footer */}
         <ModalFooter>

@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import {Flex, Box} from 'rebass/styled-components';
-import Modal from '../Modals';
 import DateTime from '../Forms/date_time';
 import CallOffset from '../Forms/call_offset';
-import {
-  ModalContent,
-  ModalHeader,
-  ModalFooter
-} from '../ui/modals';
-import {CancelButton, SaveButton} from '../ui/buttons';
 import {TextInput} from '../ui/inputs';
 
 class ExistingEventItinerary extends Component {

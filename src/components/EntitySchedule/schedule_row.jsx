@@ -1,28 +1,31 @@
 import React from 'react';
-import {ScheduleRowContainer, ScheduleRowGrid, FlexColumn} from '../ui/containers';
+import {ScheduleRowContainer} from '../ui/containers';
 import StatusButton from '../StatusButton';
 import {CalendarIcon} from '../ui/icons';
+import {Flex, Box} from 'rebass/styled-components';
 
 const ScheduleRow = ({time, subtime, name, details, guests}) => (
-  <div>
-    <ScheduleRowContainer>
-      <ScheduleRowGrid>
+  <ScheduleRowContainer>
+    <Flex alignItems="center" height="100%">
+      <Box width={1/12} px={1}>
         <CalendarIcon color="#323C47" />
-        <FlexColumn>
-          <span className="grid-column-2 bold">{time}</span>
-          <span className="grid-column-2 small grey">{subtime}</span>
-        </FlexColumn>
-        <FlexColumn>
-          <span className="grid-column-3 bold">{name}</span>
-          <span className="grid-column-3 small grey">{details}</span>
-        </FlexColumn>
-        <FlexColumn>
-          <span className="grid-column-4">{guests}</span>
-        </FlexColumn>
-        <span className="grid-column-5"><StatusButton>New</StatusButton></span>
-      </ScheduleRowGrid>
-    </ScheduleRowContainer>
-  </div>
+      </Box>
+      <Box width={2/12} px={1}>
+        <p>{time}</p>
+        <p className="small grey">{subtime}</p>
+      </Box>
+      <Box width={5/12} px={1}>
+        <p>{name}</p>
+        <p className="small grey">{details}</p>
+      </Box>
+      <Box width={2/12} px={1}>
+        <p>{guests}</p>
+      </Box>
+      <Box width={2/12} px={1}>
+        <StatusButton>New</StatusButton>
+      </Box>
+    </Flex>
+  </ScheduleRowContainer>
 )
 
 export default ScheduleRow;

@@ -17,7 +17,7 @@ class HoverImage extends Component {
     return (
       <React.Fragment>
         {showDetails && (
-          <div style={{position: 'fixed', top: '30px', textAlign: 'center'}}>
+          <div style={{position: 'absolute', top: '30px', textAlign: 'center'}}>
             <p className="small">{name}</p>
             <p className="small grey">{title}</p>
           </div>

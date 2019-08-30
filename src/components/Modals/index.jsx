@@ -11,8 +11,8 @@ class Modal extends Component {
     return (
       <>
         <ModalOverlay />
-        <ModalClose />
         <ModalContainer {...this.props}>
+          <ModalClose />
           {children && children}
         </ModalContainer>
       </>
