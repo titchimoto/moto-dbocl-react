@@ -151,3 +151,12 @@ export const FLIGHT_RESULTS = [
     route: 'London Heathrow -> Portland International'
   }
 ]
+
+export const FILES = [
+  {
+    name: 'Theo_Deane_Boarding_Pass.pdf',
+  },
+  {
+    name: 'Mickey Mouse Requests.pdf',
+  },
+]

@@ -199,3 +199,33 @@ export const ChevronIcon = ({color = '#323C47', width = '15px', height = '9px'})
     </Icon>
   );
 }
+
+export const ChatIcon = ({color = '#109CF1', width = '20px', height = '20px'}) => {
+  return (
+    <Icon>
+      <svg xmlns="http://www.w3.org/2000/svg" height={height} width={width} fill={color} viewBox="0 0 20 20">
+         <path
+           fill={color}
+           fillRule="evenodd"
+           d="M4 19.804L10.087 16H18a2 2 0 002-2V2a2 2 0 00-2-2H2a2 2 0 00-2 2v12a2 2 0 002 2h2v3.804zM9.513 14L6 16.196V14H2V2h16v12H9.513zM5 11V9h7v2H5zm0-6v2h9V5H5z"
+           clipRule="evenodd"
+         />
+       </svg>
+    </Icon>
+  );
+}
+
+export const FileIcon = ({color = '#109CF1', width = '20px', height = '20px'}) => {
+  return (
+    <Icon>
+      <svg xmlns="http://www.w3.org/2000/svg" height={height} width={width} fill={color} viewBox="0 0 20 20">
+          <path
+            fill={color}
+            fillRule="evenodd"
+            d="M11.343 4.544l1.425 1.403-6.318 6.416a.836.836 0 000 1.168c.3.307.803.305 1.1-.002l6.952-7.062a2.671 2.671 0 000-3.734c-.968-.988-2.681-.966-3.63.002l-7.587 7.702a4.505 4.505 0 000 6.3c1.663 1.698 4.52 1.67 6.158 0l8.849-8.988 1.425 1.403-8.847 8.986c-2.414 2.463-6.56 2.503-9.014 0a6.505 6.505 0 01.002-9.103l7.587-7.702c1.724-1.758 4.725-1.797 6.486 0a4.671 4.671 0 01-.002 6.536l-6.947 7.057a2.771 2.771 0 01-3.96.004 2.837 2.837 0 010-3.969l6.32-6.417z"
+            clipRule="evenodd"
+          />
+        </svg>
+    </Icon>
+  );
+}

@@ -10,6 +10,7 @@ import EventItinerary from '../components/Modals/event_itinerary';
 import VehicleItinerary from '../components/Modals/vehicle_itinerary';
 import HotelItinerary from '../components/Modals/hotel_itinerary';
 import FlightItinerary from '../components/Modals/flight_itinerary';
+import Sidebar from '../components/Sidebar';
 
 storiesOf('Modals & Forms', module)
   .add('Contact Card', () => <ContactCard />)
@@ -19,3 +20,4 @@ storiesOf('Modals & Forms', module)
   .add('Vehicle Itinerary', () => <VehicleItinerary />)
   .add('Hotel Itinerary', () => <HotelItinerary />)
   .add('Flight Itinerary', () => <FlightItinerary />)
+  .add('Notes & Files Sidebar', () => <Sidebar />)

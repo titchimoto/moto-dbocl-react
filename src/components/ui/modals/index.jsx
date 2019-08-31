@@ -34,8 +34,6 @@ export const ModalContent = styled.div`
 `
 
 export const ModalHeader = styled.div`
-  display: flex;
-  align-items: center;
   padding: 0px 20px;
   height: 50px;
   border-bottom: 1px solid #D6D6D6;

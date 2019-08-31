@@ -11,6 +11,8 @@ import {CancelButton, SaveButton} from '../ui/buttons';
 import {SelectInput} from '../ui/inputs';
 import ExistingEventItinerary from '../Forms/existing_event_itinerary';
 import NewEventItinerary from '../Forms/new_event_itinerary';
+import NotesAndFilesIcons from './notes_and_files_icons';
+import Sidebar from '../Sidebar';
 
 class EventItinerary extends Component {
   constructor(props) {
@@ -18,7 +20,13 @@ class EventItinerary extends Component {
     this.state = {
       showNewEvent: false,
       showExistingEvent: false,
+      showSidebar: false,
     }
+  }
+
+  handleShowSidebar = () => {
+    console.log('$$$ HANDLE SHOWING SIDEBAR!!!')
+    this.setState(({showSidebar}) => ({showSidebar: !showSidebar}))
   }
 
   handleSelect = ({target: {value}}) => {
@@ -27,12 +35,20 @@ class EventItinerary extends Component {
   }
 
   render() {
-    const {showExistingEvent, showNewEvent} = this.state;
+    console.log('$$$ this.state', this.state);
+    const {showExistingEvent, showNewEvent, showSidebar} = this.state;
     const formDirty = showExistingEvent || showNewEvent;
     return (
       <Modal maxWidth="950px">
         {/* Modal Header */}
-        <ModalHeader>Event Itinerary</ModalHeader>
+        <ModalHeader>
+          <Flex alignItems="center" height="100%" justifyContent="space-between">
+            <h4>Event Itinerary</h4>
+            <NotesAndFilesIcons
+              showSidebar={this.handleShowSidebar}
+            />
+          </Flex>
+        </ModalHeader>
         {/* Add Guests */}
         <AddGuests />
         <ModalContent>
@@ -58,6 +74,7 @@ class EventItinerary extends Component {
           <CancelButton />
           <SaveButton />
         </ModalFooter>
+        {showSidebar && <Sidebar />}
       </Modal>
     )
   }
