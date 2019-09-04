@@ -26,6 +26,27 @@ export const Status = styled.button`
     background: #F7B95B;
   }
 
+  &.invert {
+    background: white;
+
+    &.confirmed {
+      color: #2ED47A;
+      border: 1px solid #2ED47A;
+    }
+    &.cancelled {
+      color: #F7685B;
+      border: 1px solid #F7685B;
+    }
+    &.invited {
+      color:  #F7B95B;
+      border: 1px solid  #F7B95B;
+    }
+    &.new {
+      color:  #109CF1;
+      border: 1px solid  #109CF1;
+    }
+  }
+
   &:hover {
     cursor: pointer;
     opacity: 0.6;

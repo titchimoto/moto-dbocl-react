@@ -13,7 +13,22 @@ class StatusButton extends Component {
     }
   }
 
-  handleShowMenu = () => this.setState(({openMenu}) => ({openMenu: !openMenu}))
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleShowMenu, false)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleShowMenu, false)
+  }
+
+  handleShowMenu = (e) => {
+    if (this.node.contains(e.target)) {
+      return this.setState(({openMenu}) => ({openMenu: true}))
+    }
+    this.handleClickOutside()
+  }
+
+  handleClickOutside = () => this.setState({openMenu: false})
 
   handleChangeStatus = ({target: { value }}) => this.setState({activeStatus: value, openMenu: false})
 
@@ -21,8 +36,8 @@ class StatusButton extends Component {
     const { children } = this.props
     const { openMenu, activeStatus } = this.state
     return (
-      <div style={{position: 'relative'}} >
-        <Status className={activeStatus} onClick={this.handleShowMenu}>
+      <div ref={node => this.node = node} style={{position: 'relative'}} >
+        <Status className={activeStatus}>
           {activeStatus || children}
         </Status>
         {openMenu && (
@@ -31,7 +46,7 @@ class StatusButton extends Component {
             .filter((status) => status !== activeStatus)
             .map((status) => (
             <Status
-              className={status}
+              className={`${status} invert`}
               invert
               value={status}
               onClick={this.handleChangeStatus}
