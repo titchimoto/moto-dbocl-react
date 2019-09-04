@@ -12,6 +12,24 @@ export const Status = styled.button`
   color: white;
   text-align: center;
   margin: 0px 5px;
+  text-transform: capitalize;
+
+  &.confirmed {
+    background: #2ED47A;
+  }
+
+  &.cancelled {
+    background: #F7685B;
+  }
+
+  &.invited {
+    background: #F7B95B;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
 `
 
 export const AddButton = styled.button`
@@ -94,7 +112,7 @@ export const SecondaryButton = styled.button`
   color: ${({color}) => color || '#109CF1'};
   background: white;
   border-radius: 5px;
-  border: ${({color}) => `1px solid ${color}` || '1px solid #109CF1'};
+  border: ${({color}) => color ? `1px solid ${color}` : '1px solid #109CF1'};
   margin: 0px 5px;
   text-transform: uppercase;
   padding: 0px 10px;

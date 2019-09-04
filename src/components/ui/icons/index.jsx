@@ -12,6 +12,16 @@ export const ProfileImage = styled.img`
   }
 `
 
+export const HoverProfileImage = styled.div`
+  position: absolute;
+  margin-top: -30px;
+  text-align: center;
+
+   p {
+     line-height: 12px;
+   }
+`
+
 export const Icon = styled.i`
   margin: 0px 10px 0px 5px;
 

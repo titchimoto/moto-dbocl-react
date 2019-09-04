@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import {Flex, Box} from 'rebass/styled-components';
 import {PrimaryButton} from '../ui/buttons';
 import {PopOutContainer, Divider} from '../ui/containers';

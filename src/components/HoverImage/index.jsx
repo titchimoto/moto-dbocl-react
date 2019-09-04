@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ProfileImage} from '../ui/icons';
+import {ProfileImage, HoverProfileImage} from '../ui/icons';
 
 class HoverImage extends Component {
   constructor(props) {
@@ -11,16 +11,15 @@ class HoverImage extends Component {
   handleHideDetails = () => this.setState({showDetails: false})
 
   render() {
-    console.log('$$$ this.state', this.state);
     const {showDetails} = this.state;
     const {imageUrl, name, title} = this.props;
     return (
       <React.Fragment>
         {showDetails && (
-          <div style={{position: 'absolute', top: '30px', textAlign: 'center'}}>
+          <HoverProfileImage>
             <p className="small">{name}</p>
             <p className="small grey">{title}</p>
-          </div>
+          </HoverProfileImage>
         )}
         <ProfileImage
           spaced

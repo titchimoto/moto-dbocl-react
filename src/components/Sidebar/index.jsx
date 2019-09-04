@@ -7,6 +7,7 @@ import {
   SidebarContainer,
   FileDropContainer,
   NoteContainer,
+  NoteInputContainer,
 } from './styles';
 import {FILES, NOTES} from '../../data';
 
@@ -68,14 +69,14 @@ class Sidebar extends Component {
               </Box>
             ))}
         </Box>
-        <Flex alignItems="center">
+        <NoteInputContainer>
           <Box width={10/12}>
             <TextInput placeholder="Enter note..."/>
           </Box>
           <Box width={2/12}>
             <FileIcon />
           </Box>
-        </Flex>
+        </NoteInputContainer>
       </SidebarContainer>
     )
   }

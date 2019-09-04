@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 // import { action } from '@storybook/addon-actions';
 // import { linkTo } from '@storybook/addon-links';
 import {
-  Status,
   AddButton,
   TextLink,
   NavLink,
@@ -11,9 +10,10 @@ import {
   SaveButton,
   LabelButton,
 } from '../components/ui/buttons';
+import StatusButton from '../components/StatusButton';
 
 storiesOf('Buttons', module)
-  .add('Status Button', () => <Status>New</Status>)
+  .add('Status Button', () => <StatusButton>New</StatusButton>)
   .add('Add Button', () => <AddButton>+</AddButton>)
   .add('Text Link', () => <TextLink>mellie@meowmeow.com</TextLink>)
   .add('Nav Link', () => <NavLink>Events</NavLink>)

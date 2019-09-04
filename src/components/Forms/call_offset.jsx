@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {TextInput} from '../ui/inputs';
-import {LabelButton} from '../ui/buttons';
+import { TextInput } from '../ui/inputs';
+import { LabelButton } from '../ui/buttons';
+
 class CallOffset extends Component {
   render() {
     return (

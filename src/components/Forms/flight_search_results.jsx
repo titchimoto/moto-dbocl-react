@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import {Flex, Box} from 'rebass/styled-components';
+import { Flex, Box } from 'rebass/styled-components';
 import FlightResultsRow from './flight_results_row';
-import {PrimaryButton, SecondaryButton} from '../ui/buttons';
-import {Divider} from '../ui/containers';
-import {FieldLabel} from '../ui/inputs';
-import {FLIGHT_RESULTS} from '../../data';
+import { PrimaryButton, SecondaryButton } from '../ui/buttons';
+import { FieldLabel } from '../ui/inputs';
+import { FLIGHT_RESULTS } from '../../data';
 
 
 class FlightSearchResults extends Component {

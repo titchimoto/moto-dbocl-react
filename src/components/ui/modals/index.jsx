@@ -4,7 +4,7 @@ export const ModalOverlay = styled.div`
   background: black;
   opacity: 0.1;
   position: absolute;
-  height: 1000px;
+  height: 1400px;
   width: 100%;
   z-index: -1;
 `
@@ -19,12 +19,18 @@ export const ModalContainer = styled.div`
 `
 
 export const ModalClose = styled.div`
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  float: right;
   height: 30px;
   width: 30px;
   background: #F7685B;
   color: white;
   border-radius: 50%;
+  margin-right: -15px;
+  margin-top: -15px;
 `
 
 export const ModalContent = styled.div`
@@ -34,6 +40,9 @@ export const ModalContent = styled.div`
 `
 
 export const ModalHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0px 20px;
   height: 50px;
   border-bottom: 1px solid #D6D6D6;

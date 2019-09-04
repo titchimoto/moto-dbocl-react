@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {SelectInput, TextInput, FieldLabel} from '../ui/inputs';
-import {Row} from '../ui/containers';
-import {PrimaryButton} from '../ui/buttons';
-import {ProfileImage} from '../ui/icons';
-import {Flex, Box} from 'rebass/styled-components';
+import { SelectInput, TextInput } from '../ui/inputs';
+import { Row } from '../ui/containers';
+import { PrimaryButton } from '../ui/buttons';
+import { ProfileImage } from '../ui/icons';
+import { Flex, Box } from 'rebass/styled-components';
 
 class PreviousConnectionRow extends Component {
   render() {
@@ -11,7 +11,7 @@ class PreviousConnectionRow extends Component {
       <Row>
         <Flex mx={-2} alignItems="center">
           <Box width={1/12} px={2}>
-            <ProfileImage src="https://i.imgur.com/KNFkYkz.jpg" />
+            <ProfileImage src="https://i.imgur.com/9fHmOz1.png" />
           </Box>
           <Box width={3/12} px={2}>
             <SelectInput>

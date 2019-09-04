@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
-import {SearchInput, DateInput} from '../ui/inputs';
-import {AddButton, NavLink} from '../ui/buttons';
-import {FilterIcon, ReportIcon} from '../ui/icons';
-import {Flex} from 'rebass/styled-components';
+import { Flex } from 'rebass/styled-components';
+import { SearchInput, DateInput } from '../ui/inputs';
+import { AddButton, NavLink } from '../ui/buttons';
+import { FilterIcon, ReportIcon } from '../ui/icons';
+import { PopOutContainer } from '../ui/containers';
 
 class ScheduleFilter extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showMenu: false,
+    }
+  }
+
+  handleShowMenu = () => this.setState(({ showMenu }) => ({ showMenu: !showMenu }))
+
   render() {
+    const { showMenu } = this.state
     return (
       <div>
         <Flex justifyContent="flex-start">
@@ -13,9 +25,22 @@ class ScheduleFilter extends Component {
           <NavLink>DEAL</NavLink>
         </Flex>
         <Flex alignItems="center" justifyContent="space-between">
-          <div>
-            <SearchInput placeholder="Search Theo's Schedule" /><AddButton>+</AddButton>
-          </div>
+          <Flex alignItems="center">
+            <SearchInput placeholder="Search Theo's Schedule" />
+            <div>
+              <AddButton onClick={this.handleShowMenu}>+</AddButton>
+              {showMenu && (
+                <PopOutContainer style={{marginTop: '10px'}}>
+                  <Flex alignItems="flex-start" flexDirection="column">
+                    <span>+ Event</span>
+                    <span>+ Car</span>
+                    <span>+ Flight</span>
+                    <span>+ Hotel</span>
+                  </Flex>
+                </PopOutContainer>
+              )}
+            </div>
+          </Flex>
           <div>
             <Flex alignItems="center" justifyContent="space-between">
               <Flex flexDirection="column">

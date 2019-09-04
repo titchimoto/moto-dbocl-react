@@ -74,12 +74,12 @@ export const CONTACTS = [
     title: 'Stylist',
   },
   {
-    imageUrl: 'https://i.imgur.com/KNFkYkz.jpg',
+    imageUrl: 'https://i.imgur.com/9fHmOz1.png',
     name: 'Richard Deane',
     title: 'Manager',
   },
   {
-    imageUrl: 'https://i.imgur.com/KNFkYkz.jpg',
+    imageUrl: 'https://i.imgur.com/WfyQ9qf.jpg',
     name: 'Mellie Deane',
     title: 'Stylist',
   },
@@ -159,4 +159,11 @@ export const FILES = [
   {
     name: 'Mickey Mouse Requests.pdf',
   },
+]
+
+export const STATUSES = [
+  'new',
+  'confirmed',
+  'invited',
+  'cancelled'
 ]

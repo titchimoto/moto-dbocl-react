@@ -1,27 +1,48 @@
 import React, { Component } from 'react';
+import { Flex } from 'rebass/styled-components';
 import StatusButton from '../StatusButton';
 import Modal from '../Modals';
+import NotesAndFilesIcons from './notes_and_files_icons';
 import {
   ModalContent,
   ModalHeader,
   ModalFooter
 } from '../ui/modals';
-import {CancelButton, SaveButton, TextLink} from '../ui/buttons';
-import {ProfileImage, EmailIcon, PhoneIcon, HouseIcon} from '../ui/icons';
-import {Flex} from 'rebass/styled-components';
+import { CancelButton, SaveButton, TextLink } from '../ui/buttons';
+import { ProfileImage, EmailIcon, PhoneIcon, HouseIcon } from '../ui/icons';
 
 class ContactCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSidebar: false
+    }
+  }
+
+  handleShowSidebar = () => this.setState(({ showSidebar }) => ({ showSidebar: !showSidebar }))
+
   render() {
+    const { showSidebar } = this.state
     return (
-      <Modal maxWidth="520px">
-        <ModalHeader>Theo Deane's Information</ModalHeader>
+      <Modal showSidebar={showSidebar} maxWidth="520px">
+        <ModalHeader>
+          <h4>Theo Deane's Information</h4>
+          <Flex>
+            <StatusButton>New</StatusButton>
+            <NotesAndFilesIcons
+              showSidebar={this.handleShowSidebar}
+            />
+          </Flex>
+        </ModalHeader>
         <ModalContent>
         <Flex ml={-4} p={4} alignItems="flex-start" justifyContent="center">
           <Flex mr={3} alignItems="center" justifyContent="flex-start">
             <ProfileImage src="https://i.imgur.com/KNFkYkz.jpg" />
           </Flex>
             <div class="person-contact-section">
-              <h3 class="inline">Theo Deane</h3><StatusButton>New</StatusButton>
+              <Flex>
+                <h3 class="inline">Theo Deane</h3><StatusButton>New</StatusButton>
+              </Flex>
               <p class="extra-small grey">Talent -> Cats</p>
               <div>
                 <EmailIcon /><span>work: </span><TextLink href="mailto:#">theo@meowmeow.com</TextLink>
@@ -45,7 +66,7 @@ class ContactCard extends Component {
                 <TextLink>see more</TextLink>
             </Flex>
             <Flex flexDirection="column">
-              <h5>Recent Events</h5>
+              <h5>Recent Contacts</h5>
                 <TextLink>Mickey Mouse</TextLink>
                 <TextLink>Mellie Deane</TextLink>
                 <TextLink>Buzz Lightyear</TextLink>

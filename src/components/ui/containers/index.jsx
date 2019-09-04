@@ -15,8 +15,10 @@ export const PopOutContainer = styled.div`
   z-index: 10;
   max-width: 300px;
   min-width: 100px;
-  padding: 20px;
+  padding: 15px;
   margin: 35px 0px;
+  right: ${({right}) => right || ''};
+  top: ${({top}) => top || ''};
 `
 
 export const ContentSection = styled.section`
@@ -126,6 +128,12 @@ export const ScheduleRowGrid = styled.div`
   &.grid-column-5 {
     grid-column: 5;
   }
+`
+
+export const AllGuestsContainer = styled.div`
+  margin-top: -25px;
+  right: 70px;
+  position: relative;
 `
 
 // Notes Containers

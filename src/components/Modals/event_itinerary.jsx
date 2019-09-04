@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Flex, Box} from 'rebass/styled-components';
+import { Flex, Box } from 'rebass/styled-components';
 import Modal from '../Modals';
 import AddGuests from '../AddGuests';
 import {
@@ -7,12 +7,12 @@ import {
   ModalHeader,
   ModalFooter
 } from '../ui/modals';
-import {CancelButton, SaveButton} from '../ui/buttons';
-import {SelectInput} from '../ui/inputs';
+import { CancelButton, SaveButton } from '../ui/buttons';
+import StatusButton from '../StatusButton';
+import { SelectInput } from '../ui/inputs';
 import ExistingEventItinerary from '../Forms/existing_event_itinerary';
 import NewEventItinerary from '../Forms/new_event_itinerary';
 import NotesAndFilesIcons from './notes_and_files_icons';
-import Sidebar from '../Sidebar';
 
 class EventItinerary extends Component {
   constructor(props) {
@@ -24,10 +24,7 @@ class EventItinerary extends Component {
     }
   }
 
-  handleShowSidebar = () => {
-    console.log('$$$ HANDLE SHOWING SIDEBAR!!!')
-    this.setState(({showSidebar}) => ({showSidebar: !showSidebar}))
-  }
+  handleShowSidebar = () => this.setState(({showSidebar}) => ({showSidebar: !showSidebar}))
 
   handleSelect = ({target: {value}}) => {
     if (value === 'new') this.setState({showNewEvent: true, showExistingEvent: false})
@@ -35,15 +32,15 @@ class EventItinerary extends Component {
   }
 
   render() {
-    console.log('$$$ this.state', this.state);
     const {showExistingEvent, showNewEvent, showSidebar} = this.state;
     const formDirty = showExistingEvent || showNewEvent;
     return (
-      <Modal maxWidth="950px">
+      <Modal showSidebar={showSidebar} maxWidth="950px">
         {/* Modal Header */}
         <ModalHeader>
-          <Flex alignItems="center" height="100%" justifyContent="space-between">
-            <h4>Event Itinerary</h4>
+          <h4>Event Itinerary</h4>
+          <Flex>
+            <StatusButton>New</StatusButton>
             <NotesAndFilesIcons
               showSidebar={this.handleShowSidebar}
             />
@@ -74,7 +71,6 @@ class EventItinerary extends Component {
           <CancelButton />
           <SaveButton />
         </ModalFooter>
-        {showSidebar && <Sidebar />}
       </Modal>
     )
   }

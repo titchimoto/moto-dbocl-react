@@ -7,7 +7,6 @@ import {
   EmailIcon,
   PhoneIcon,
   AddIcon,
-  SettingsIcon,
   ContactIcon,
 } from '../ui/icons';
 
@@ -25,7 +24,6 @@ const RelatedPeopleRow = ({name, title, email, phone}) => (
         <Flex alignItems="center" justifyContent="space-between">
           <ContactIcon />
           <PencilIcon />
-          <SettingsIcon />
         </Flex>
       </Flex>
     </Box>
